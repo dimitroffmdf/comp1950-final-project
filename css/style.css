@@ -18,7 +18,9 @@ html, body{
 }
 
 
-/* header elements */
+/* *******************************
+         header elements 
+********************************* */
 
 header{
     background: #272822 url("/students/mdimitrov3/comp1950-final-project/images/header.jpg") no-repeat top right;
@@ -55,7 +57,9 @@ header nav a:hover{
     color: #aaa;
 }
 
-/* Main section */
+/* ********************************
+           Main section 
+********************************** */
 
 main{
     padding: 10px 5%;
@@ -114,7 +118,9 @@ main section{
   text-decoration: none;
 }
   
-/* footer elements */
+/* *************************
+      footer elements 
+*************************** */
 
 footer{
     background: #272822;
