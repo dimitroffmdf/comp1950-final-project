@@ -1,3 +1,0 @@
-A test to see if i can sync files. 
-
-You can delete this file.
