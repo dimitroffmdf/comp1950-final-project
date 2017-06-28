@@ -18,29 +18,29 @@
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/form.css">
     </head>
     <body>
-    
-        <div id="form-container">
-            <form action="/students/mdimitrov3/comp1950-final-project/scripts/quiz1.php" method="post" class="form-style">
 <!-- 
 
-************* Form header 
+********************
+The quiz starts here
+********************
 
 -->
+        <div id="form-container">
+            <form action="/students/mdimitrov3/comp1950-final-project/scripts/quiz1.php" method="post" class="form-style">
+
             
                 <h1>COMP 1950 | Intermediate Web Development and Design</h1>
                 <hr />
                 <h2>Quiz #1 - Dynamic Content</h2>
         
-<!-- - FORM INPUTS -->
+
                 <br />
 
-<!-- - Student NAME  - -->
+<!-- - Student Info  - -->
 
                  <label for="studentname">Student Name:</label>
                  <input type="text" id="studentname" name="studentname" class="text-input" placeholder="Student Name" />
                  <br />
-<!---Student Number  -->
-
                    <label class="" for="studentnumber">Student Number</label>
                    <input type="text" id="studentnumber" name="studentnumber" placeholder="Student Number" class="text-input" />
                    <hr />
@@ -76,13 +76,18 @@
                     <br />
                     <input type="radio" id="question-five-four" name="question-five" value="&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;"><label for="question-five-four">	&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;</label>
 
-<!-- submit -->
                     <br />
                     <br />
                     <input type="submit" id="submit" class="button" value="Send" />
 
                  </form>
                 </div>
-            
+<!-- 
+
+********************
+The quiz  ends  here
+********************
+
+-->            
         </body>
       </html>
