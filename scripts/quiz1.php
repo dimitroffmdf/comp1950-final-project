@@ -11,5 +11,5 @@ Question 4: <?php echo $_POST['question-four']; ?><br />
 Question 5: <?php echo $_POST['question-five']; ?><br />
 <br />
 <br />
-<a href="/">return back to the page</a>
+<a href="/students/mdimitrov3/comp1950-final-project/">return back to the page</a>
 

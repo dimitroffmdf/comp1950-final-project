@@ -12,83 +12,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>COMP 1950 | Quiz #1</title>
+        <title>Quiz #1 | COMP 1950</title>
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/normalize.css">
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style.css">
+        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/form.css">
     </head>
     <body>
+    
+        <div id="form-container">
+            <form action="/students/mdimitrov3/comp1950-final-project/scripts/quiz1.php" method="post" class="form-style">
+<!-- 
 
+************* Form header 
 
-
-      <div id="form-container">
-      			<form action="/students/mdimitrov3/comp1950-final-project/scripts/quiz1.php" method="post" class="form-style">
-<!-- Form header -->
-			        <div class="form-desc">
-			          <h2>COMP 1950 | Intermediate Web Development and Design</h2>
+-->
+            
+                <h1>COMP 1950 | Intermediate Web Development and Design</h1>
                 <hr />
-                <h3>Quiz #1</h3>
-			        </div>
-<!-- - FORM INPUTS --><br />
+                <h2>Quiz #1 - Dynamic Content</h2>
+        
+<!-- - FORM INPUTS -->
+                <br />
 
-			<!-- - Student NAME  - -->
+<!-- - Student NAME  - -->
 
-			            <label class="">Student Name:</label>
-			            <span>
-			              <input type="text" id="studentname" name="studentname" class="studentname" placeholder="Student Name" />
-			            </span>
-                  <br />
+                 <label for="studentname">Student Name:</label>
+                 <input type="text" id="studentname" name="studentname" class="text-input" placeholder="Student Name" />
+                 <br />
+<!---Student Number  -->
 
-			<!---Student Number  -->
+                   <label class="" for="studentnumber">Student Number</label>
+                   <input type="text" id="studentnumber" name="studentnumber" placeholder="Student Number" class="text-input" />
+                   <hr />
+                   <p>This quiz is to be done individually and is closed book.</p>
 
-			            <label class="" for="studentnumber">Student Number</label>
-			              <input type="text" id="studentnumber" name="studentnumber" placeholder="Student Number" class="" />
-                    <hr />
-                    <p>This quiz is to be done individually and is closed book.</p>
-
-			<!--- Open Questions - - -->
-                  <label class="" for="question-one">1. Name one type of HTTP Server. (1 marks)</label>
-                  <br />
-                   <textarea id="question-one" name="question-one" class="answer-txtarea"></textarea>
+<!--- Questions - - -->
+                   <label class="" for="question-one">1. Name one type of HTTP Server. (1 marks)</label>
+                   <br />
+                   <textarea id="question-one" name="question-one" class="txtarea"></textarea>
                    <br />
                    <br />
                    <label class="" for="question-two">2. What do the letters in the acronym <strong>WAMP</strong> stand for?  (1 marks)</label>
                    <br />
-                    <textarea id="question-two" name="question-two" class="answer-txtarea" placeholder="Windows/Apache/MySQL/PHP :P"></textarea>
+                   <textarea id="question-two" name="question-two" class="txtarea" placeholder="Windows/Apache/MySQL/PHP :P"></textarea>
                     <br />
                     <br />
                     <label class="" for="question-three">3. One use of SSI is to display the current date. Briefly describe <strong>one other case</strong> where a developer might use SSIs. (6 marks)</label>
                     <br />
-                    <textarea id="question-three" name="question-three" class="answer-txtarea"></textarea>
+                    <textarea id="question-three" name="question-three" class="txtarea"></textarea>
                     <br />
                     <br />
-         <!--- Choice Questions - - -->
-                    <p>4. Server behavior can be customized using a file called .htaccess (1 mark)</p>
-                    <br />
+                    <p>4. Server behavior can be customized using a file called .htaccess (1 mark)</p>                    
                     <input type="radio" id="question-four-true" name="question-four" value="true"><label for="question-four-true">true</label>
                     <br />
                     <input type="radio" id="question-four-false" name="question-four" value="false"><label for="question-four-false">false</label>
                     <br />
-                    <p>Which of the following is an example of SSI code? (1 mark)</p>
+                    <p>5. Which of the following is an example of SSI code? (1 mark)</p>
                     <input type="radio" id="question-five-one" name="question-five" value='&#47;&#42; &#35;echo var="DOCUMENT_NAME" &#42;&#47;'><label for="question-five-one">	&#47;&#42; &#35;echo var="DOCUMENT_NAME" &#42;&#47;</label>
                     <br />
-                    <input type="radio" id="question-five-two" name="question-five" value='&lt;&#33;&#45;&#45;&#35;echo var=&#34;DOCUMENT_NAME&#34;&#45;&#45;&gt;'><label for="question-five-two">	&lt;&#33;&#45;&#45;&#35;echo var=&#34;DOCUMENT_NAME&#34;&#45;&#45;&gt;</label>
+                    <input type="radio" id="question-five-two" name="question-five" value="&lt; &#33;&#45;&#45;&#35;echo var=&#34;DOCUMENT_NAME&#34;&#45;&#45;&gt;"><label for="question-five-two">	&lt;&#33;&#45;&#45;&#35;echo var=&#34;DOCUMENT_NAME&#34;&#45;&#45;&gt;</label>
                     <br />
                     <input type="radio" id="question-five-three" name="question-five" value="&#123; 	&#35;echo var=&#34;DOCUMENT_NAME&#34; &#125;"><label for="question-five-three">	&#123; 	&#35;echo var=&#34;DOCUMENT_NAME&#34; &#125;</label>
                     <br />
                     <input type="radio" id="question-five-four" name="question-five" value="&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;"><label for="question-five-four">	&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;</label>
 
+<!-- submit -->
+                    <br />
+                    <br />
+                    <input type="submit" id="submit" class="button" value="Send" />
 
-
-
-
-
-
-			<!-- BUTTONS -->
-                  <br />
-                  <br />
-			            <input type="submit" id="submit" class="button" value="Send" />
-
-       			</form>
-    			</div>
+                 </form>
+                </div>
+            
         </body>
       </html>

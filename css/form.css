@@ -1,0 +1,38 @@
+/* CSS STYLES FOR QUIZ PAGE 
+
+ Authors:
+
+        Milen Dimitrov - A01022201
+        Mary Do - A01024214
+
+*/ 
+#form-container{
+    width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #E2F4FD;
+    border: 1px solid;
+
+}
+label{
+    min-width: 120px;
+    display: inline-block;
+}
+
+.text-input{
+    width: 230px;
+}
+
+.txtarea {
+    width: 354px;
+    height: 30px;
+    margin-top: 5px;
+}
+
+#form-container h1{
+    font-size: 25px;
+}
+
+#form-container h2{
+    font-size: 22px;
+}
