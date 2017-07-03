@@ -10,27 +10,30 @@
     ...
     -->
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COMP 1950 | Intermediate Web Design and Development</title>
         <meta name="description" content="This website is for BCIT students of the 12 week version of COMP 1950.">
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/normalize.css">
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style.css"> 
+      <!--[if lt IE 9]>
+         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
     </head>
     <body>
         <header>
+            <a id="top"></a>
             <div id="site-title">
                 <h1 id="page-title">Comp 1950</h1>
                 <h2 id="page-description">Intermediate Web Design and Development</h2>
             </div>
             <nav>
                 <ul>
-                    <li><a href="/students/mdimitrov3/comp1950-final-project/" title="Home">home</a></li>
-                    <li><a href="/students/mdimitrov3/comp1950-final-project/about" title="About the course">about</a></li>
-                    <li><a href="#" title="Resourses">resourses</a></li>
+                    <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/" title="Home">home</a></li>
+                    <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/about.html" title="About the course">about</a></li>
+                    <li><a href="#" title="Resources">resources</a></li>
                     <li><a href="#" title="Browse all lectures">lectures</a></li>
                     <li><a href="mailto:jeffrey_parker@bcit.ca" title="Contact the instructor">contact</a></li>
-                    <li><a href="#" title="Associated">associated</a></li>
                 </ul>
             </nav>
         </header>
@@ -64,7 +67,7 @@
                 <aside id="sidebar">
                     <h3>Lectures</h3>
                     <ul>
-                        <li><a href="/students/mdimitrov3/comp1950-final-project/lecture-one.html" title="Lecture 01 | Tools &amp; Standards">01 | tools &amp; standards</a></li>
+                        <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/lectures/week-one.html" title="Lecture 01 | Tools &amp; Standards">01 | tools &amp; standards</a></li>
                         <li>02 | html5</li>
                         <li>03 | css techniques</li>
                         <li>04 | css layouts</li>
@@ -76,40 +79,37 @@
                         <li>10 | methodology</li>
                         <li>11 | project work</li>
                     </ul>
-                    <p class="btn"><a href="mailto:jeff">Contact: Jeff Parker</a></p>
+                    <a class="btn" href="mailto:jeff">Contact: Jeff Parker</a>
                 </aside>
             </div>
-
-
         </main>
         <footer>
             <div>
                 <section>
                     <h3>Contents</h3>
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>resourses</li>
+                       <li><a href="#">home</a></li>
+                       <li><a href="#">about</a></li>
+                       <li><a href="#">resources</a></li>
                     </ul>
                 </section>
                 <section>
                     <h3>Contact</h3>
-                    <p class="btn"><a href="mailto:jeff">Jeff Parker - Instructor</a></p>
+                    <a class="btn" href="mailto:jeff">Jeff Parker - Instructor</a>
                     
                 </section>
                 <section>
-                <h3>Assosciated</h3>
+                <h3>Associated</h3>
                     <ul>
-                        <li>bcit.ca</li>
-                        <li>my.bcit.ca</li>
-                        <li>students on bcitcomp.ca</li>
-                        <li>bcit computing</li>
-                        <li>comp 1950</li>
+                       <li><a href="http://bcit.ca">bcit.ca</a></li>
+                       <li><a href="http://my.bcit.ca">my.bcit.ca</a></li>
+                       <li><a href="http://bcitcomp.ca/students/">students on bcitcomp.ca</a></li>
+                       <li><a href="http://bcit.ca/computing/">bcit computing</a></li>
                     </ul>
                 </section>
             </div>
             <aside>
-                <p><span id="comp">comp 1950</span> | intermediate web design and development | <span id="top">top</span>
+               <p><a href="#">comp 1950 | intermediate web design and development</a> | <a href="#top">top</a></p>
             </aside>
         </footer>
     </body>
