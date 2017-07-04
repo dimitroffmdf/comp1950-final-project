@@ -26,7 +26,7 @@ html, body{
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'roboto condensed', 'arial', sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-top: 1.5em;
     color: #05a8aa;  
 }
@@ -46,15 +46,19 @@ header{
 }
 
 #page-title {
+   font-size: 2.8em;
    margin: 0px;
-   padding: 15px 5%;
+   padding: 15px 5% 5px;
    color: #eee;
+   text-transform: uppercase;
 }
 
 #page-description {
+   font-size: 1.8em;
    margin: 0;  
    padding: 0px 5%;
    color: #eee;
+   text-transform: uppercase;
 }
 
 
@@ -63,11 +67,11 @@ header h1{
 }
 
 header nav ul{
-    background-color: rgba(45, 42, 50, .7);
+    background-color: rgba(45, 42, 50, 0.8);
     list-style: none;
     margin-bottom: 10px;
     padding-left: 65px;
-    padding-bottom: 34px;
+    padding-bottom: 35px;
     border-top: 1px solid #eee;
 }
 
@@ -118,7 +122,10 @@ main{
 
 
 #notification{
+    background: -moz-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
+    background: -ms-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
     background: -webkit-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
+    background: linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
     border: 1px solid #222;
     border-radius: 10px;
     text-align: center;
@@ -159,7 +166,7 @@ main ul li {
 }
 
 #sidebar{
-    background: #ddd92a;
+    background: #eeec94;
     width: calc(100%/4);
     padding: 0px 15px;
     color: #4c5454;

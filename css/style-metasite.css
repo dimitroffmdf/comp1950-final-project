@@ -177,18 +177,29 @@ main h1 {
    color: #D2691E;
 }
 
+main h2 {
+   color: #5b91d8;  
+}
+
 main p {
    line-height: 2em;
    margin-bottom: 1.5em;
 }
 
+main em {
+   color: #D2691E;
+}
+
 main a:link, main a:visited {
-   text-decoration: none;
+   border-bottom: 1px dashed #ee6c4d;
    color: #ee6c4d;
+   text-decoration: none;
 }
 
 main a:hover, main a:active {
-   border-bottom: 1px dotted #ee6c4d;
+   border-bottom: 1px dashed #5b91d8;
+   color: #5b91d8;
+   text-decoration: dashed;
 }
 
 
