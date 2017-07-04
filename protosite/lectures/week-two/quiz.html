@@ -10,14 +10,39 @@
     ...
     -->
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Quiz #1 | COMP 1950</title>
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/normalize.css">
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style.css">
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/form.css">
+        <!--[if lt IE 9]>
+         <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <body>
+     <header>
+        <div id="site-title">
+            <h1 id="page-title">Comp 1950</h1>
+            <h2 id="page-description">Intermediate Web Design and Development</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/" title="Home">home</a></li>
+                <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/about.html" title="About the course">about</a></li>
+                <li><a href="#" title="Resources">resources</a></li>
+                <li><a href="#" title="Browse all lectures">lectures</a></li>
+                <li><a href="mailto:jeffrey_parker@bcit.ca" title="Contact the instructor">contact</a></li>
+                
+            </ul>
+        </nav>
+        </header>
+        <main>
+            <aside id="notification">
+                <p><strong><p>This quiz is to be done individually and is closed book.</p></strong></p>
+            </aside>
+            
+                <div>
 <!-- 
 
 ********************
@@ -27,25 +52,23 @@ The quiz starts here
 -->
         <div id="form-container">
             <form action="/students/mdimitrov3/comp1950-final-project/scripts/quiz1.php" method="post" class="form-style">
+                    <div id="form-head">
+                    <h1>COMP 1950 | Intermediate Web Development and Design</h1>
+                    <hr />
+                    <h2>Quiz #1 - Dynamic Content</h2>
 
-            
-                <h1>COMP 1950 | Intermediate Web Development and Design</h1>
-                <hr />
-                <h2>Quiz #1 - Dynamic Content</h2>
-        
-
-                <br />
-
+                </div>
+                
+                
+                <div id="fields-section">
 <!-- - Student Info  - -->
 
-                 <label for="studentname">Student Name:</label>
-                 <input type="text" id="studentname" name="studentname" class="text-input" placeholder="Student Name" />
-                 <br />
-                   <label class="" for="studentnumber">Student Number</label>
-                   <input type="text" id="studentnumber" name="studentnumber" placeholder="Student Number" class="text-input" />
-                   <hr />
-                   <p>This quiz is to be done individually and is closed book.</p>
-
+                     <label >Student Information:</label>
+                     <input type="text" id="studentname" name="studentname" class="text-input" placeholder="Student Name" />
+                     <br />
+                     <!--   <label class="" for="studentnumber">Student Number</label> -->
+                       <input type="text" id="studentnumber" name="studentnumber" placeholder="Student Number" class="text-input" />               <br />
+                    <br />
 <!--- Questions - - -->
                    <label class="" for="question-one">1. Name one type of HTTP Server. (1 marks)</label>
                    <br />
@@ -75,11 +98,11 @@ The quiz starts here
                     <input type="radio" id="question-five-three" name="question-five" value="&#123; 	&#35;echo var=&#34;DOCUMENT_NAME&#34; &#125;"><label for="question-five-three">	&#123; 	&#35;echo var=&#34;DOCUMENT_NAME&#34; &#125;</label>
                     <br />
                     <input type="radio" id="question-five-four" name="question-five" value="&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;"><label for="question-five-four">	&lt;ssi&gt; &#35;echo var=&#34;DOCUMENT_NAME&#34; &lt;&#47;ssi&gt;</label>
-
+                
                     <br />
                     <br />
-                    <input type="submit" id="submit" class="button" value="Send" />
-
+                    <input type="submit" id="submit" class="button" value="Submit your answers" />
+                    </div> 
                  </form>
                 </div>
 <!-- 
@@ -88,6 +111,15 @@ The quiz starts here
 The quiz  ends  here
 ********************
 
--->            
+-->    
+            </div>
+            
+        </main>
+        <footer>
+            <aside>
+               <p><a href="#">comp 1950 | intermediate web design and development</a> | <a href="#top">top</a></p>
+            </aside>
+        </footer>
+            
         </body>
       </html>

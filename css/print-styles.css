@@ -1,0 +1,17 @@
+aside, nav, footer{
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+
+section{
+    margin-top: 50px;
+}
+
+a:link:after, 
+	a:visited:after{
+	   content: " (URL: " attr(href) ") ";
+	   font-size: 90%;
+	}
