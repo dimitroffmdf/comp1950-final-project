@@ -244,6 +244,32 @@ main dd ul li:first-child {
 #sidebar .quiz-hw {
    background-color: #F6F5CD;
 }
+
+.widget{
+    width: 95%;
+    padding: 0 10px 10px;
+    border: 1px solid #EFEFD5;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+
+}
+
+.exercises{
+    width: 95%;
+    padding: 0 10px 10px;
+    border: 1px solid #EFEFD5;
+    margin-bottom: 20px;
+    background: #EEEC94;
+}
+
+.widget h2, .exercises h2{
+    padding: 10px 0 0 20px;
+    margin: 0 0 0 -20px;
+    width: 400px;
+    border-bottom: 5px solid;
+
+
+}
   
 /* *************************
       footer elements 
