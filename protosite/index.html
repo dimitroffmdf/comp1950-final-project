@@ -5,18 +5,17 @@
 
         Milen Dimitrov - A01022201
         Mary Do - A01024214
-    ...
-    more comments .... 
-    ...
+
     -->
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>COMP 1950 | Intermediate Web Design and Development</title>
         <meta name="description" content="This website is for BCIT students of the 12 week version of COMP 1950.">
-        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/normalize.css">
-        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style.css"> 
+        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/normalize.css" />
+        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style.css" /> 
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/print-styles.css" media="print" />
+        <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/form.css" />
       <!--[if lt IE 9]>
          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -30,10 +29,24 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/" title="Home">home</a></li>
+                    <li class="active"><a href="/students/mdimitrov3/comp1950-final-project/protosite/" title="Home">home</a></li>
                     <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/about.html" title="About the course">about</a></li>
                     <li><a href="#" title="Resources">resources</a></li>
-                    <li><a href="#" title="Browse all lectures">lectures</a></li>
+                    <li class="dropdown"><a href="#" title="Browse all lectures">lectures</a>
+                       <ul class="dropdown-content">
+                          <li><a href="#">01 | Tools &amp; Standards</a></li>
+                          <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/lectures/week-two.html">02 | HTML5</a></li>
+                          <li><a href="#">03 | CSS Techniques</a></li>
+                          <li><a href="#">04 | CSS Layouts</a></li>
+                          <li><a href="#">05 | Responsive CSS</a></li>
+                          <li><a href="#">06 | CSS3</a></li>
+                          <li><a href="#">07 | Javascript Frameworks</a></li>
+                          <li><a href="#">08 | Dynamic Content</a></li>
+                          <li><a href="#">09 | Templating, SEO</a></li>
+                          <li><a href="#">10 | Methodology</a></li>
+                          <li><a href="#">11 | Project Work</a></li>
+                       </ul>
+                    </li>
                     <li><a href="mailto:jeffrey_parker@bcit.ca" title="Contact the instructor">contact</a></li>
                 </ul>
             </nav>
