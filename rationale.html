@@ -1,0 +1,103 @@
+ <!-- COMP 1950 Final Project
+ Authors:
+
+     Milen Dimitrov - A01022201
+     Mary Do - A01024214
+ 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="This is the metasite for the COMP1950 final project.">
+   <title>Metasite - Rationale | COMP 1950 Final Project</title>
+   
+<!-- Normalize -->
+   <link rel="stylesheet" href="css/normalize.css" />
+
+<!-- Styles -->
+   <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/style-metasite.css" />
+   
+<!-- Slick Nav -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/slicknav.css" />
+   <script src="/students/mdimitrov3/comp1950-final-project/js/slicknav.js"></script>
+
+<!--[if lt IE 9]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+   
+</head>
+   
+<body>
+   <div id="header-logo"> <!-- wrapper for header/nav -->
+      <header>
+         <a id="top"></a>
+         <div>
+            <a href="index.html">
+               <h1>Final Project Metasite</h1>
+               <h2>Milen Dimitrov, Mary Do</h2>
+            </a>
+         </div>
+      </header>
+
+
+<!-- ***************** Nav Bar ****************** -->
+      <nav>
+         <ul id="menu">
+            <li><a href="/students/mdimitrov3/comp1950-final-project/">Introduction</a></li>
+            <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/">Protosite</a></li>
+            <li><a href="/students/mdimitrov3/comp1950-final-project/sitemap.html">Sitemap</a></li>
+            <li><a href="/students/mdimitrov3/comp1950-final-project/rationale.html">Rationale</a></li>
+         </ul>
+      </nav>
+   </div>
+      
+      
+<!-- ***************** Content ****************** -->
+   <main>
+      <section>
+         <h1>Rationale</h1>
+         
+         <h2>Layout</h2>
+         <p>Our goal of this project was to improve on the design and user interface while keeping all of the same elements of the original COMP1950 website. It was a bit of a challenge figuring out how and where to display all of the useful elements. How we settled on the layout was thinking about what students--like ourselves--want to see and what we want fast access to.</p>
+         
+         <p>We based our thoughts on the lecture pages, as that's where the majority of students will be spending time on and where the bulk of the content is. What did we want to see generally? The current class lecture notes, exercises, homework <em>and</em> fast access to <strong>other weekly lectures</strong>. We liked how the original site lists the weekly classes on the sidebar. It's easy to see what each class is about and gives fast access to switching between weekly class lectures/notes, so we decided to keep a similar feature in our layout.</p>
+         
+         <p>We liked the feature of the sidebar so much that we wanted to expand on it even more. We thought about how each class is laid out. During each class we have several agendas go over with exercises scattered throughout, a quiz at the beginning of class, and a homework assigned at the end. This is the general pattern for each lecture, so we decided that <em>the sidebar for each lecture</em> should contain the following: a quiz at the top of the list, followed by the agendas of the class, class exercises (including a zipped folder with class exercises of the week for easy download), as well as a link to the homework PDF at the end of the list. Many of these sidebar links are bookmarks, which makes it easy for students to jump to whatever topic or exercise they need at hand. This is what the sidebar navigation contains for the lecture pages and what we believe is optimal for user experience. As for the actual content of the lectures, we believe it should stay the same as the original site, as that's how the lectures are done and keeping in the same order makes the most sense.</p>
+         
+         <p>Now that we have the lecture pages sorted out, we also had to deal with the general links like home, about, resources, lectures, and contact. On the original site, there was only a single sidebar navigation. It was a bit difficult sorting out the details, but eventually we came to the conclusion that these links should have its own navigation bar at the top which is separate from lecture specific things on the sidebar.</p>
+
+         <p>In summary, the main navigation contains general links; the sidebar navigation is lecture specific. On lecture pages, the sidebar nav contains all the things pertinent to the weekly lecture. On the homepage, the sidebar nav lists the weekly lectures.</p>
+         
+         <h2>Colours</h2>
+         <p>The base colours of the site are varying shades of grey with a couple shades of Persian Green. Here is a <a href="https://coolors.co/05a8aa-4c5454-2d2a32-ffffff-ced0d0" target="_blank">swatch of the colours</a> that were used on the protosite. We wanted to keep the same sense of professionalism as the original. Grey is a neutral colour and works well on most websites. The Persian Green is more of a blue-green colour. Blue is a colour used on many corporate websites; it is commonly associated with tranquility, reliability, and security. Both blue and green are favourites of both genders and are gender neutral colours. A splash of yellow was also added to brighten up the site, and complements the Persian Green.</p>
+         
+         <h2>CSS3</h2>
+         <p>We kept the website fairly simple but implemented a few CSS3 techniques, particularly the linear-gradient, transitions, border-radius, and opacity (rgba) just to add a bit of visual appeal to the site.</p>
+
+         
+      </section>
+   </main>
+   <div class="push"></div>
+   <footer>
+      <a href="https://validator.w3.org/check?uri=referer">HTML Validator</a>
+      <a href="#top">&#9652; Back to Top</a>
+   </footer>
+   
+<script>
+	$(function(){
+		$('#menu').slicknav({
+           duration: 500,
+           brand: 'COMP1950 Final Project',
+           label: '',
+
+         });
+        
+	});
+</script>
+
+</body>
+</html>

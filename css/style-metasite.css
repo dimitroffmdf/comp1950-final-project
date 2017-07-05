@@ -1,0 +1,270 @@
+/*
+COMP 1950 Final Project
+    Authors:
+
+        Milen Dimitrov - A01022201
+        Mary Do - A01024214
+
+*/
+
+/* ****************************************
+      1. General Stuff like fonts, img, body, etc
+****************************************** */
+
+@import url('https://fonts.googleapis.com/css?family=Coda|Merriweather+Sans');
+
+* {
+   box-sizing: border-box;
+}
+
+html, body {
+   height: 100%;
+   margin: 0 auto;
+   background-color: #efe;
+   font-family: 'merriweather sans', sans-serif;
+   color: #3d5a80;
+   font-size: 0.9em;
+
+}
+
+img {
+   max-width: 100% !important;
+   height: auto !important;
+}
+
+.wrapper {
+   min-height: 100%;
+   margin-bottom: -20px;
+}
+
+.clear {
+   clear:both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-weight: 500;
+   color: #ee6c4d;
+
+}
+
+ul, li {
+   line-height: 2.2em;
+   list-style-position: inside;
+}
+
+ol li {
+   line-height: 2.2em;
+   list-style-position: inside;
+}
+
+li:last-child {
+   margin-bottom: 20px;
+}
+
+#header-logo {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   z-index: 1;
+   text-align: center;
+   -moz-box-shadow: 0px 8px 15px rgba(51,51,51,0.2);
+   -o-box-shadow: 0px 8px 15px rgba(51,51,51,0.2);
+   -webkit-box-shadow: 0px 8px 15px rgba(51,51,51,0.2);
+   box-shadow: 0px 8px 15px rgba(51,51,51,0.2);
+   background-color: #fff;
+}
+
+header {
+   flex: 1.4;
+   min-width: 255px;
+   border-bottom: 1px solid #ee6c4d;
+   
+}
+
+header h1 {
+   margin: 40px 0px 0px 0px;
+   padding: 0px 50px;
+   font-family: 'coda', sans-serif;
+   font-size: 2.5em;
+   text-transform: none;
+   color: #293241;
+}
+
+header h2 {
+   font-family: 'coda', sans-serif;
+   margin: 0 0 30px 0;
+   font-size: 1em;
+   color: #293241;
+}
+
+
+header a {
+   text-decoration: none;
+   color: #293241;
+}
+
+
+/* ****************************************
+      3. Navigation
+****************************************** */
+
+.slicknav_menu {
+	display:none;
+}
+
+nav {
+   flex: 8.6;
+   letter-spacing: 1px;
+}
+
+nav ul {
+   margin: 15px 0 0 0;
+   padding: 0;
+   list-style: none;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: flex-end;
+}
+
+
+nav ul li a {
+   display: block;
+   position: relative;
+   padding: 0px 10px;
+   margin: 0px 20px;
+   text-decoration: none;
+   -moz-transition: background 0.5s linear;
+   -ms-transition: background 0.5s linear;
+   -webkit-transition: background 0.5s linear;
+   transition: background 0.5s linear;
+}
+
+
+nav ul li a:link, nav ul li a:visited {
+   color: #aaa;
+}
+
+nav ul li a:hover {
+   color: #efe;
+   background-color: #98c1d9;
+}
+
+
+/* ****************************************
+      4. General Content
+****************************************** */
+
+main {
+   display: flex;
+   flex-flow: column nowrap;
+   position: relative;
+   z-index: 0;
+   
+   width: 65%;
+   margin: 10px auto;
+   padding: 10px;
+   
+   background-color: #efe;
+   border-bottom: #999;
+}
+
+main section {
+   font-size: 0.9em;
+   margin-bottom: 20px;
+}
+
+main h1 {
+   color: #D2691E;
+}
+
+main h2 {
+   color: #5b91d8;  
+}
+
+main p {
+   line-height: 2em;
+   margin-bottom: 1.5em;
+}
+
+main em {
+   color: #D2691E;
+}
+
+main a:link, main a:visited {
+   border-bottom: 1px dashed #ee6c4d;
+   color: #ee6c4d;
+   text-decoration: none;
+}
+
+main a:hover, main a:active {
+   border-bottom: 1px dashed #5b91d8;
+   color: #5b91d8;
+   text-decoration: dashed;
+}
+
+
+/* ****************************************
+      5. Footer
+****************************************** */
+
+footer, .push {
+   height: 20px;
+}
+
+footer {
+   background-color: #fff;
+   border-top: 1px solid #ccc;
+   padding: 10px 50px 20px;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   font-size: 0.7em;  
+}
+
+footer a:link {
+   text-decoration: none;
+   color: #aaa;
+}
+
+footer a:visited {
+   text-decoration: none;
+   color: #aaa;
+}
+
+footer a:hover {
+   color: #333;
+}
+
+footer a:active {
+   color: #999;
+}
+
+/* ****************************************
+      8. Media Queries
+****************************************** */
+
+@media screen and (max-width: 700px) {
+   
+   body {
+      font-size: 0.85em;
+   }
+   
+	/* #menu is the original menu */
+	#menu {
+		display:none;
+	}
+	
+	.slicknav_menu {
+		display:block;
+	}
+    
+    header {
+        display: none;
+    }
+
+   main {
+      width: 100%;
+   }
+   
+}
