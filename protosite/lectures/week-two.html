@@ -520,19 +520,19 @@
                         <p><a href="http://www.w3.org/Graphics/SVG/">Scaleable Vector Graphics (SVG)</a> can be embedded into HTML5 documents. SVG are 100% scalable without the pixelated effect that scaled raster images can suffer from. SVG file data is stored as text, so they are much smaller in file size than a raster equivalent.</p>
 
                         <p>You can use SVG graphics with the <code>img</code> tag, just as with raster graphics. You can also use .svg as a CSS <code>background-image</code>.</p>
-                        <pre><code>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /></code></pre>
+                        <code>&lt;img src="images/logo.svg" alt="COMP 1950 logo" /></code>
                         <p>The <code>png</code> on the left is 13KB. The <code>.svg</code> on the right is only 4KB.</p>	
                         <img style="float:left;margin-right:50px;" src="/students/mdimitrov3/comp1950-final-project/images/comp1950_logo.png" />
                         <img src="/students/mdimitrov3/comp1950-final-project/images/comp1950_logo.svg" />
 
                         <p>Alternatively, you can use SVG code 'inline' with the <code>svg</code> tag. The advantage of doing this is it will result in one less request/response between the client and the server. The disadvantage to inline SVG is that it adds considerable clutter to your your <code>.html</code> code. Just copy the source code from your <code>.svg</code> file and paste it directly into your <code>.html</code>!</p>
-                        <pre>
+                        
                         <code>
                         &lt;svg viewBox="0 0 55 28">
                         &lt;!-- svg code goes here... sometimes there is a LOT of code here! -->
                         &lt;/svg>
                         </code>
-                        </pre>
+                        
 
                         <h4>SVG Tools</h4>
                         <p>Use an SVG application to help you create and manipulate your SVG code. </p>
@@ -557,11 +557,11 @@
                                 <li>attribute: <code>autoplay="autoplay"</code> begin playing audio as soon as page is loaded *NOT very user friendly*</li>
                                 <li>you may also wish to include a direct link for your users to download the file</li>
                             </ul>
-                    <pre><code>&lt;audio controls="controls">
-                        &lt;source src="media/house-a-square.mpg" type="audio/mpeg" />
-                        &lt;source src="media/house-a-square.mp3" type="audio/mp3" />
-                        &lt;source src="media/house-a-square.ogg" type="audio/ogg" />
-                    &lt;/audio></code></pre>
+                    <code>&lt;audio controls="controls">
+&lt;source src="media/house-a-square.mpg" type="audio/mpeg" />
+&lt;source src="media/house-a-square.mp3" type="audio/mp3" />
+&lt;source src="media/house-a-square.ogg" type="audio/ogg" />
+&lt;/audio></code>
                               <audio controls="controls">
                                 <source src="/_shared_resources_1950/media/house-a-square.mp3" type="audio/mpeg" />
                                 <source src="/_shared_resources_1950/media/house-a-square.ogg" type="audio/ogg" />
@@ -584,7 +584,7 @@
                                 <li>attribute: <code>autoplay="autoplay"</code> begin playing video as soon as page is loaded *NOT very user friendly*</li>
                                 <li>you may also wish to include a direct link for your users to download the file</li>			
                             </ul>
-                    <pre><code>&lt;video 	preload="none" 
+                    <code>&lt;video 	preload="none" 
                         controls=controls 
                         width="355" height="200" 
                         poster="media/poster-bear-in-water.jpg">
@@ -592,7 +592,7 @@
                         &lt;source src="media/bear-in-water.webm" type="video/webm" /> 
                         &lt;source src="media/bear-in-water.mp4" type="video/mp4" />
                         &lt;source src="media/bear-in-water.ogg" type="video/ogg" />
-                    &lt;/video>	</code></pre>		
+                    &lt;/video>	</code>	
                               <video preload="none" controls width="355" height="200" poster="/_shared_resources_1950/media/poster-bear-in-water.jpg">
                                 <source src="/_shared_resources_1950/media/bear-in-water.webm" type="video/webm" /> 
                                 <source src="/_shared_resources_1950/media/bear-in-water.mp4" type="video/mp4" />
@@ -626,13 +626,13 @@
                             <li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>, an HTML5 guru.</li>
                             <li>Add the shiv to the head section of your HTML5 pages. If you dont download your own copy, you can use a CDN.</li>
                         <li>Insert a coded-comment that will apply the shiv ONLY with IE browsers less than version 9:
-                            <pre>
+                            
                             <code>
                             &lt;!--[if lt IE 9]>
                             &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">&lt;/script>
                             &lt;![endif]-->
                             </code>
-                            </pre>
+                            
                         </li>
                             <li>Because HTML5 understands both HTML4 and XHTML tags, you can "use" HTML5 today</li>
                         </ul>

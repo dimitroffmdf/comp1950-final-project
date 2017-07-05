@@ -35,6 +35,9 @@ section h1:first-child {
    margin-top: 1em;  /* smaller top margin than normal headings */
 }
 
+fieldset {
+    width: 100%;
+}
 
 /* *******************************
          header elements 
@@ -362,4 +365,45 @@ body a.btn:hover {
   background: -o-linear-gradient(top, #037576, #111);
   background: linear-gradient(top, #037576, #111);
   text-decoration: none;
+}
+
+
+/* *************************
+      media queries 
+*************************** */
+
+
+@media only screen and (max-width: 1100px)
+{  
+    body a.btn{
+        width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 840px)
+{  
+    #content{
+        display: block;
+    }
+    
+    section, #sidebar{
+        width: 100%;
+    }
+    
+    main section {
+    width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px)
+{  
+    footer section {
+    width: 100%;
+    }
+    
+    .widget h2, .exercises h2 {
+    margin: 0;
+    width: 100%;
 }
