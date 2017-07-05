@@ -161,8 +161,23 @@ main section:last-of-type {
     padding-bottom: 30px; /* for nice amount of space at bottom */
 }
 
-main ul li {
+main ul, ol {
+   margin-top: 1em;
+}
+
+main ul li, main ol li {
    margin-bottom: 1em;
+}
+
+
+
+main dt {
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+
+main dd ul li:first-child {
+   margin: 10px 0;
 }
 
 #sidebar{
@@ -220,6 +235,14 @@ main ul li {
 
 #sidebar ul li a:active {
    color: #05a8aa;  
+}
+
+#sidebar .exercise {
+   background-color: #DDDC89;
+}
+
+#sidebar .quiz-hw {
+   background-color: #F6F5CD;
 }
   
 /* *************************
