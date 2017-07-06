@@ -15,7 +15,7 @@ html, body{
     margin: 0;
     padding: 0;
     font-family: 'roboto', 'trebuchet ms', sans-serif;
-    font-size: 0.9em;
+    font-size: 1.2em;
     color: #4c5454;
     height: 100vh;
 }
@@ -45,7 +45,6 @@ fieldset {
 
 header{
     background: #272822 url("/students/mdimitrov3/comp1950-final-project/images/header.jpg") no-repeat top right;
-    
 }
 
 #page-title {
@@ -69,89 +68,50 @@ header h1{
     margin-top: 0;
 }
 
-nav > ul{
+header nav ul{
     background-color: rgba(45, 42, 50, 0.8);
     list-style: none;
-    margin: 0px;
+    margin-bottom: 10px;
     padding-left: 65px;
-    padding-bottom: 35px;
+    padding-bottom: 46px;
     border-top: 1px solid #eee;
 }
 
-nav ul li{
+header nav ul li{
     display: inline;
-    position: relative;
     float: left;
     margin: 0;
     text-transform: capitalize;
 }
 
-nav ul li.active {
-   background-color: #05a8aa;  
-}
-
-nav li > a{
+header nav li a{
     display: block;
     color: #fff;
     padding: 10px 35px;
     text-decoration: none;
 }
 
-nav ul li a:link{
+header nav ul li a:link{
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:visited{
+header nav ul li a:visited{
     color: #fff;
     text-decoration: none;
 }
 
-nav ul li a:hover{
+header nav ul li a:hover{
     color: #fff;
     text-decoration: none;
     background-color: #05a8aa;
     transition: background 0.3s linear;
 }
 
-nav ul li a:active{
+header nav ul li a:active{
     color: #4c5454;
     text-decoration: none;
     background-color: #eee;
-}
-
-nav ul li > ul {
-    min-width: 500px;
-    background-color: #05a8aa;
-    display: none;
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li.dropdown:hover {  
-    background-color: #05a8aa; /* dropdown li looks "active" */
-}
-
-nav ul li:hover ul.dropdown-content {
-   display: block; 
-}
-
-nav ul li ul.dropdown-content li {
-   display: block;  
-   width: 50%;
-}
-
-nav ul li ul li a {
-   color: #fff;
-   margin: 5px;
-   padding: 10px 0px 10px 20px;
-}
-
-nav ul li ul li a:hover {
-   background-color: #222;
 }
 
 /* ********************************
@@ -160,6 +120,7 @@ nav ul li ul li a:hover {
 
 main{
     padding: 10px 5% 0px 5%;
+    line-height: 2em;
 }
 
 
@@ -179,7 +140,7 @@ main{
 }
 
 main section{
-    width: calc(100%/4*3);
+    width: 100%;
 }
 
 main a:link {
@@ -223,72 +184,11 @@ main dd ul li:first-child {
 }
 
 #sidebar{
-    background: #eeec94;
-    width: calc(100%/4);
-    padding: 0px 15px;
-    color: #4c5454;
-}
-
-#sidebar h3 {
-    color: #4c5454;
-}
-
-#sidebar ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#sidebar ul li {
-   border-bottom: 1px solid #4c5454;  
-   line-height: 2.5em;
-   margin: 0;
-}
-
-#sidebar ul li {
-   text-decoration: none;  
-   padding-left: 5px;
-   display: block;
-}
-
-#sidebar ul li {
-   text-decoration: none;  
-   display: block;
-}
-
-#sidebar ul li:hover {
-   background: -webkit-linear-gradient(left, #fff, transparent);
-   background: -moz-linear-gradient(left, #fff, transparent);
-   background: -ms-linear-gradient(left, #fff, transparent);
-   background: -o-linear-gradient(left, #fff, transparent);
-   background: linear-gradient(left, #fff, transparent);
-   text-decoration: none;  
-   display: block;
-}
-
-#sidebar ul li a {
-   text-decoration: none;
-   display: block;
-}
-
-#sidebar ul li a:hover { 	
-   color: #aa0705;
-}
-
-#sidebar ul li a:active {
-   color: #05a8aa;  
-}
-
-#sidebar .exercise {
-   background-color: #DDDC89;
-}
-
-#sidebar .quiz-hw {
-   background-color: #F6F5CD;
+    display: none;
 }
 
 .widget{
-    width: 95%;
+    width: 100%;
     padding: 0 10px 10px;
     border: 1px solid #EFEFD5;
     margin-bottom: 20px;
@@ -297,7 +197,7 @@ main dd ul li:first-child {
 }
 
 .exercises{
-    width: 95%;
+    width: 100%;
     padding: 0 10px 10px;
     border: 1px solid #EFEFD5;
     margin-bottom: 20px;
@@ -307,9 +207,8 @@ main dd ul li:first-child {
 .widget h2, .exercises h2{
     padding: 10px 0 0 20px;
     margin: 0 0 0 -20px;
-    max-width: 50%;
     border-bottom: 5px solid;
-
+    max-width: 50%;
 
 }
   
@@ -323,13 +222,7 @@ footer{
 }
 
 footer div {
-   padding: 0 5%;
-}
-
-footer section{
-    width:calc(100% / 3);
-    float: left;
-    margin-bottom: 10px;
+   display: none;
 }
 
 footer aside{
