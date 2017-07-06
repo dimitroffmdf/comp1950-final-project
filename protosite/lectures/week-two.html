@@ -17,6 +17,12 @@
         <link rel="alternate stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/projector-style.css" title="Projector" media="screen" />
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/print-styles.css" media="print" />
         <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/form.css" />
+        
+        <!-- mobile navigation -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- <link rel="stylesheet" href="/students/mdimitrov3/comp1950-final-project/css/slicknav.css" /> -->
+        <script src="/students/mdimitrov3/comp1950-final-project/scripts/slicknav.js"></script>
+        <script src="/students/mdimitrov3/comp1950-final-project/scripts/slicknav-menu.js" defer="defer"></script>
       <!--[if lt IE 9]>
          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
       <![endif]-->
@@ -28,7 +34,7 @@
                 <h1 id="page-title">Comp 1950</h1>
                 <h2 id="page-description">Intermediate Web Design and Development</h2>
             </div>
-            <nav>
+            <nav id="menu">
                 <ul>
                     <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/" title="Home">home</a></li>
                     <li><a href="/students/mdimitrov3/comp1950-final-project/protosite/about.html" title="About the course">about</a></li>
@@ -557,64 +563,6 @@
                         </ul>
                     </div>
                     <div class="widget">
-                        <h2 id="multimedia">Multimedia</h2>
-                        <fieldset>
-                            <legend>Audio</legend>
-                            <p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/audio">audio</a> element provides a way to offer many audio formats to the client, allowing the browser to choose the one most suitable.</p>
-                            <p>The most common audio formats for the web are: <code>audio/mp3</code>, <code>audio/mpeg</code> and <code>audio/ogg</code>.</p>
-                            <h4>Each audio tag may contain:</h4>
-                            <ul>
-                                <li><code>source</code> tags as children of the <code>audio</code> tag, one for each audio format available. Each <code>source</code> must have a <code>src</code> (path to audio file) and <code>type</code> (audio file MIME type)</li>
-                                <li>attribute: <code>controls="controls"</code> give the user control over the audio *important for usability*</li>
-                                <li>attribute: <code>loop="loop"</code> loop audio playback</li>
-                                <li>attribute: <code>preload="none"</code> dont load the audio until the user clicks 'play', <code>preload="metadata"</code> preloads the clip duration statistic only, <code>preload="auto"</code> loads the audio clip to the client before they click 'play'</li>
-                                <li>attribute: <code>autoplay="autoplay"</code> begin playing audio as soon as page is loaded *NOT very user friendly*</li>
-                                <li>you may also wish to include a direct link for your users to download the file</li>
-                            </ul>
-                    <code>&lt;audio controls="controls">
-&lt;source src="media/house-a-square.mpg" type="audio/mpeg" />
-&lt;source src="media/house-a-square.mp3" type="audio/mp3" />
-&lt;source src="media/house-a-square.ogg" type="audio/ogg" />
-&lt;/audio></code>
-                              <audio controls="controls">
-                                <source src="/_shared_resources_1950/media/house-a-square.mp3" type="audio/mpeg" />
-                                <source src="/_shared_resources_1950/media/house-a-square.ogg" type="audio/ogg" />
-                              </audio>
-                                 <p><a href="/_shared_resources_1950/media/house-a-square.mp3">Download the audio</a></p>	
-                        </fieldset>
-                        <fieldset>
-                            <legend>Video</legend>
-                            <p>The <a href="https://developer.mozilla.org/en/docs/Web/HTML/Element/video">video</a> element provides a way to offer many video formats to the client, allowing the browser to choose the one most suitable.</p>	
-                            <p>The most common video formats for the web are: <code>video/mp4</code>, <code>video/ogg</code> and <code>video/webm</code>.</p>
-                            <h4>Each video tag may contain:</h4>
-                            <ul>
-                                <li><code>source</code> tags as children of the <code>video</code> tag, one for each video format available. Each <code>source</code> must have a <code>src</code> (path to video file) and <code>type</code> (video file MIME type)</li>
-                                <li>attribute: <code>controls="controls"</code> give the user control over the video playback *important for usability*</li>
-                                <li>attribute: <code>width="250" height="100"</code> set the size of the video</li>
-                                <li>attribute: <code>poster="image.jpg"</code> display a static image when the video is not playing</li>
-                                <li>attribute: <code>loop="loop"</code> loop playback</li>
-                                <li>attribute: <code>muted="muted"</code> begin with audio silenced</li>
-                                <li>attribute: <code>preload="none"</code> dont load the video until the user clicks 'play', <code>preload="metadata"</code> preloads the clip duration statistic only, <code>preload="auto"</code> loads the clip to the client before they click 'play'</li>
-                                <li>attribute: <code>autoplay="autoplay"</code> begin playing video as soon as page is loaded *NOT very user friendly*</li>
-                                <li>you may also wish to include a direct link for your users to download the file</li>			
-                            </ul>
-                    <code>&lt;video 	preload="none" 
-                        controls=controls 
-                        width="355" height="200" 
-                        poster="media/poster-bear-in-water.jpg">
-
-                        &lt;source src="media/bear-in-water.webm" type="video/webm" /> 
-                        &lt;source src="media/bear-in-water.mp4" type="video/mp4" />
-                        &lt;source src="media/bear-in-water.ogg" type="video/ogg" />
-                    &lt;/video>	</code>	
-                              <video preload="none" controls width="355" height="200" poster="/_shared_resources_1950/media/poster-bear-in-water.jpg">
-                                <source src="/_shared_resources_1950/media/bear-in-water.webm" type="video/webm" /> 
-                                <source src="/_shared_resources_1950/media/bear-in-water.mp4" type="video/mp4" />
-                              </video>	
-                              <p><a href="/_shared_resources_1950/media/bear-in-water.mp4">Download the video</a></p>
-                        </fieldset>
-                    </div>
-                    <div class="widget">
                         <h2>HTML5 Today</h2>
                         <h3>Is it time to start using HTML5?</h3>
                         <ul>
@@ -631,12 +579,7 @@
                                     <li>So, if you have an <code>&lt;article&gt;</code> tag, IE will strip everything out of it and create them as sibling elements. Awesome.</li>
                                 </ul></li>
                             <li>With the huge amount of IE out there, it might be problematic to start working with HTML5</li>
-                            <li>However, there is a workaround and it is really easy:
-                                <ul>
-                                    <li><code>&lt;script&gt;document.createElement("article");&lt;/script&gt;</code></li>
-                                    <li>This creates an element called <code>&lt;article&gt;</code> which the browser (IE, in this case) can understand and style appropriately</li>
-                                </ul>
-                                </li>
+                            
                             <li>Creating an entry for every element can get a bit heavy, so you can use the <a href="https://github.com/aFarkas/html5shiv">HTML5shiv</a> script written by <a href="http://remysharp.com/">Remy Sharp</a>, an HTML5 guru.</li>
                             <li>Add the shiv to the head section of your HTML5 pages. If you dont download your own copy, you can use a CDN.</li>
                         <li>Insert a coded-comment that will apply the shiv ONLY with IE browsers less than version 9:
@@ -813,7 +756,6 @@
                         <li><a href="#features">HTML5 features</a></li>
                         <li class="exercise"><a href="#exercise2">HTML5 Exercise #2</a></li>
                         <li><a href="#graphics">Graphics</a></li>
-                        <li><a href="#multimedia">Multimedia</a></li>
                         <li><a href="#css">CSS review</a></li>
                         <li><a href="#summary">Summary</a></li>
                         <li class="exercise"><a href="#">Download all exercises</a></li>
