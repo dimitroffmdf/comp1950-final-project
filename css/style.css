@@ -18,6 +18,8 @@ html, body{
     font-size: 0.9em;
     color: #4c5454;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 *{
@@ -45,7 +47,7 @@ fieldset {
 
 header{
     background: #272822 url("/students/mdimitrov3/comp1950-final-project/images/header.jpg") no-repeat top right;
-    
+    flex: 1 0 auto;
 }
 
 #page-title {
@@ -58,7 +60,7 @@ header{
 
 #page-description {
    font-size: 1.8em;
-   margin: 0;  
+   margin: 0 0 10px 0;
    padding: 0px 5%;
    color: #eee;
    text-transform: uppercase;
@@ -74,8 +76,8 @@ nav > ul{
     list-style: none;
     margin: 0px;
     padding-left: 65px;
-    padding-bottom: 35px;
-    border-top: 1px solid #eee;
+    padding-bottom: 33px;
+    border-top: 1px solid #ccc;
 }
 
 nav ul li{
@@ -87,7 +89,7 @@ nav ul li{
 }
 
 nav ul li.active {
-   background-color: #05a8aa;  
+   background-color: #037576;  
 }
 
 nav li > a{
@@ -137,11 +139,15 @@ nav ul li.dropdown:hover {
 
 nav ul li:hover ul.dropdown-content {
    display: block; 
+   -webkit-box-shadow: 10px 10px 15px -3px rgba(17,17,17,0.7);
+   -moz-box-shadow: 10px 10px 15px -3px rgba(17,17,17,0.7);
+   box-shadow: 10px 10px 15px -3px rgba(17,17,17,0.7);
 }
 
 nav ul li ul.dropdown-content li {
    display: block;  
    width: 50%;
+
 }
 
 nav ul li ul li a {
@@ -160,15 +166,15 @@ nav ul li ul li a:hover {
 
 main{
     padding: 10px 5% 0px 5%;
+    flex: 8 0 auto;
 }
-
 
 #notification{
     background: -moz-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
     background: -ms-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
     background: -webkit-linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
     background: linear-gradient(top, rgba(221, 217, 42, 0.3) , rgba(238, 238, 238, 0.5));
-    border: 1px solid #222;
+    border: 1px solid #bbb;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 10px;
@@ -210,7 +216,6 @@ main ul, ol {
 main ul li, main ol li {
    margin-bottom: 1em;
 }
-
 
 
 main dt {
@@ -319,17 +324,22 @@ main dd ul li:first-child {
 
 footer{
    color: #eee;
-   background-color: #2d2a32;
+   background-color: #111;
+   flex: 1 0 auto;
 }
 
 footer div {
    padding: 0 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   background-color: #2d2a32;
 }
 
 footer section{
-    width:calc(100% / 3);
-    float: left;
+    width: calc(100%/3);
     margin-bottom: 10px;
+    background-color: #2d2a32;
 }
 
 footer aside{
